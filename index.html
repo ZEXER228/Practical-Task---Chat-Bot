@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат-бот</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-app">
+        <header class="chat-header">
+            <h1 id="app-title">Чат-бот</h1>
+        </header>
+        
+        <main class="chat-container">
+            <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+        </main>
+        
+        <footer class="chat-footer">
+            <div class="input-wrapper">
+                <input type="text" id="chat-input" placeholder="Введите сообщение..." autocomplete="off" aria-label="Поле ввода сообщения">
+                <button id="send-btn" class="send-btn" disabled aria-label="Отправить сообщение">
+                    <svg class="send-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
